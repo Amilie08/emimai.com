@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Your site title -->
+    <title>Emily Mai Graphic Design</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Your site description" />
+
+    <!-- Favicon Image. -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!-- Google Web Font. -->
+    <link href="//fonts.googleapis.com/css?family=Lato:700,300" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Kreon:700" rel='stylesheet' type='text/css'>
+
+    <!-- Normalize v.3.0.0 - makes browsers render all elements more consistently. -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css" />
+
+    <!-- Stylesheet - to improve site's load speed, better use the minimized version.
+         The unminified version is also included in package. -->
+    <link rel="stylesheet" type="text/css" href="css/style.lite.css" />
+    
+</head>
+
+<body>
+
+    <!-- All content (menu, main-entry, and footer) goes inside this container. -->
+    <div class="main-container">
+
+        <!-- Logo and menu inside this container. -->
+        <div class="header">
+            <div class="clearfix">
+
+                <!-- Put your site logo here. Recommended size is 165px x 50px. -->
+                <div class="float-left logo">
+                    <h1>
+                        <!-- To close iframe -->
+                        <a href="http://www.emimai.com" class="closeframe">
+                            <img src="images/logo.png" alt="#"/>
+                        </a>
+                    </h1>
+                </div>
+
+                <!-- Top Menu Bar -->
+                <div class="float-right">
+                    <ul id="top-nav" class="slimmenu">
+                        
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="mailto:maiemily8@gmail.com">Contact</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+                
+        <!-- Main Entry. 
+             All posts thumbnails and sliders go inside .main-entry div. All of them are grid based named sizeXX (XX represents number of column and row)
+
+                size11 = 1 column x 1 row 
+                size12 = 1 column x 2 rows
+                size21 = 2 columns x 1 row
+                size32 = 3 columns x 2 rows (I use this for inner page to show video or slideshow)
+
+             The basic code are these...
+
+                <div class="brick tint size11">
+
+                    <img src="images/5171071313_e4c110ccb2_b.jpg" alt="" />
+                    <div class="overlay">
+                        <h3 class="project-title">Your Project Title</h3>
+                        <p class="project-description">Your project description</p>
+                        <a href="URL" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                    </div>
+                </div>
+
+             Legend:
+             * Class:
+                    brick = The grid. Must be included.
+                    tint = To lighten the image. FYI, tint won't work on slideshow images. Optional.
+                    size12 = Size of the grid. You can change this to size11, size21, or size32. Must be included.
+             
+             You can vary them all you want. See examples below for better understanding.
+        -->
+        <div id="freewall" class="free-wall main-entry">
+            
+            <!-- The main grid for inner page. You can fill it with image sliders or embed video -->
+            <div class="brick size32 cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-speed="600" data-fixpos="0-0">
+                <img src="images/info.jpg"  />
+                <img src="images/info1.jpg"  />
+                <img src="images/info2.jpg"  />
+               
+            </div>
+            
+            <!-- Current project description -->
+            <div class="brick size21" data-fixpos="2-0">
+                <div class="cover">
+                    <h1>WHY VOTE</h1>
+                    <p> Inforgrpahic</p>
+                    <p>    This is an infographic poster designed specifically for high school and middle school students to teach the significance of voting. In order to appeal to the younger demographic, a modern and clean design was chosen to represent the data metrics and messages in a clear, concise manner. By presenting the topic of voting in an interesting and engaging way, the poster hopes to spark enthusiasm on voting and inspire students to take a personal interest on the matter.
+                    </p>
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Related post entry -->
+            <div class="brick tint size11">
+                <img src="images/kartz.jpg" alt="" />
+                <div class="overlay">
+                    <h3 class="project-title">KARTZ</h3>
+                    <p class="project-description">Karz is a set of vocabulary cards for kids that are designed to help children learn vocabulary in a fun and interactive way.</p>
+                    <a href="kartz.html" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                </div>
+            </div>
+            <div class="brick tint size11">
+                <img src="images/cal.png" alt="" />
+                <div class="overlay">
+                    <h3 class="project-title">STAY COOL</h3>
+                    <p class="project-description">Stay Cool is an infographic poster designed to introduce fun, new, and alternative ways to protect our planet.</p>
+                    <a href="staycool.html" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                </div>
+            </div>
+            <div class="brick tint size11">
+                <img src="images/noho.jpg" alt="" />
+                <div class="overlay">
+                    <h3 class="project-title">NOHO PARKING</h3>
+                    <p class="project-description">NoHo Parking is a rebranding of an existing parking structure located in Los Angeles.</p>
+                    <a href="noho.html" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                </div>
+            </div>
+            <div class="brick tint size11">
+                <img src="images/whyvote.jpg" alt="" />
+                <div class="overlay">
+                    <h3 class="project-title">WHY VOTE</h3>
+                    <p class="project-description">This is an infographic poster designed specifically for high school and middle school students to teach the significance of voting.</p>
+                    <a href="whyvote.html" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                </div>
+            </div>
+            <div class="brick tint size11">
+                <img src="images/cell.jpg" alt="" />
+                <div class="overlay">
+                    <h3 class="project-title">WOODEN PHONE CASE</h3>
+                    <p class="project-description">The idea behind this iPhone case was initially to design a case that was both light and had a unique design to it.</p>
+                    <a href="cell.html" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                </div>
+            </div>
+            <!-- <div class="brick tint size11">
+                <img src="images/cs1.jpg" alt="" />
+                <div class="overlay">
+                    <h3 class="project-title">Chris Sanchez's Portfolio Site</h3>
+                    <p class="project-description"></p>
+                    <a href="cs.html" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                </div>
+            </div> -->
+            <div class="brick tint size11">
+                <img src="images/illume.jpg" alt="" />
+                <div class="overlay">
+                    <h3 class="project-title">ILLUME</h3>
+                    <p class="project-description">Illume is an eco-friendly light bulb package that does not require any adhesive for binding.</p>
+                    <a href="illume.html" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                </div>
+            </div>
+            <div class="brick tint size11">
+                <img src="images/tea1.jpg" alt="" />
+                <div class="overlay">
+                    <h3 class="project-title">SIMPLICITEA</h3>
+                    <p class="project-description">SimpliciTea is a brand of tea that offers a deeper cultural experience into the origins of the tea itself.</p>
+                    <a href="tea.html" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                </div>
+            </div>
+            <div class="brick tint size11">
+                <img src="images/stem.jpg" alt="" />
+                <div class="overlay">
+                    <h3 class="project-title">STEM POSTERS</h3>
+                    <p class="project-description">Inspired by the Rorschach test, these posters are constructed by different symbolic images that represent <strong>science</strong>, <strong>technology</strong>,<strong>engineering</strong>, <strong>mathematics</strong>. The asymmetrical composition represent the structure of our human brain, and these posters are intended to encourage more girls to be interested in science and engineering. </p>
+                    <a href="stem.html" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                </div>
+            </div>
+            <div class="brick tint size11">
+                <img src="images/choco1.jpg" alt="" />
+                <div class="overlay">
+                    <h3 class="project-title">SPECTACULAR CHOCOLATE</h3>
+                    <p class="project-description">Spectacular Chocolate is a chocolate brand specifically designed for children and their parents. Once the wrapper being unwrapped, the back of the wrapper can turn into a fun art project- paper puppets. The goals for this project is to reduce the usage of paper through little things. Teaching children the importance of protecting our planet should start at an early age, and this sweet treat can mark the starting point.</p>
+                    <a href="choco.html" class="open-project">OPEN <span class="pictogram">&#xe803;</span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="float-right copyright">
+                <p>&copy;2014
+                    <strong>EmilyMai</strong>. All rights reserved. Designed by <a href="mailto:maiemily8@gmail.com">Emily Mai</a> 
+                </p>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- The scripts -->
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/freewall.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slimmenu.min.js"></script>
+    <script type="text/javascript" src="js/custom-script.min.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52935805-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>
